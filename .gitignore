@@ -1,0 +1,45 @@
+# =================================== #
+# Visual Studio / MonoDevelop / Unity #
+# =================================== #
+*.booproj
+*.csproj
+*.pidb
+*.sln
+*.suo
+*.svd
+*.unityproj
+*.user
+*.userprefs
+sysinfo.txt
+
+# ========== #
+# Others     #
+# ========== #
+*.log
+*.pyc
+
+# ========== #
+# Texting    #
+# ========== #
+Texting/Library
+Texting/Temp
+Texting/obj
+Texting/Assets/Robot Kyle
+Texting/Assets/Standard Assets
+Texting/Assets/ZRNAssets
+
+# ========== #
+# Photing    #
+# ========== #
+Photing/Library
+Photing/Temp
+Photing/obj
+
+# ========== #
+# Dishes     #
+# ========== #
+Dishes/Library
+Dishes/Temp
+Dishes/obj
+
+
