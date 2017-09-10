@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -39,6 +39,7 @@ public class ScoreGui : MonoBehaviour
 	public void Hide ()
 	{
 		SwitchRenderer (false);
+		highScore.enabled = false;
 	}
 
 	public void ShowHighScore ()
@@ -55,7 +56,6 @@ public class ScoreGui : MonoBehaviour
 	{
 		for (int i = 0; i < NumberOfDigits + 1; i++)
 			digitsSpriteRenderer [i].enabled = b;
-		highScore.enabled = b;
 	}
 
 	public void SetDigits (int n)
