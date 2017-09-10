@@ -9,4 +9,10 @@ Unity 5.6.0f3
 
 ### Dishes
 
-
+### NENE QUEST
+音楽：  
+　魔王魂  
+　フリー音楽素材 H/MIX GALLERY  
+　　(管理者：秋山裕和 http://www.hmix.net/)  
+　ニコニコモンズ  
+キーボード画像：http://www.sharots.com/sozai/keyboard.html  
