@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,13 +21,11 @@ public class FieldAnimation : MonoBehaviour
 
 		for (int i = 0; i < numCloud; i++) {
 			Cloud [i] = objCloud.transform.FindChild ("Body_" + i.ToString ()).gameObject;
-			Cloud [i].AddComponent<CloudAction> ();
-			Cloud [i].GetComponent<CloudAction> ().cfg = cfg;
+			Cloud [i].AddComponent<CloudAction> ().cfg = cfg;
 		}
 		for (int i = 0; i < numMountain; i++) {
 			Mountain [i] = objMountain.transform.FindChild ("Body_" + i.ToString ()).gameObject;
-			Mountain [i].AddComponent<MountainAction> ();
-			Mountain [i].GetComponent<MountainAction> ().cfg = cfg;
+			Mountain [i].AddComponent<MountainAction> ().cfg = cfg;
 		}
 	}
 }
