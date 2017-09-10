@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,21 +16,17 @@ public class PlayerController : MonoBehaviour
 
 	bool isActive;
 
-	// Use this for initialization
-	void Start ()
-	{
-		keyMoving = new Dictionary<string, Vector3> () {
-			{ "Up", new Vector3 (0, 0, 1) },
-			{ "Down", new Vector3 (0, 0, -1) },
-			{ "Right", new Vector3 (1, 0, 0) },
-			{ "Left", new Vector3 (-1, 0, 0) }
-		};
-	}
-
 	public void Initialize ()
 	{
 		isActive = true;
 		status.velocity = cfg.PLAYER_INITIAL_SPEED;
+
+		keyMoving = new Dictionary<string, Vector3> () {
+			{ cfg.KEY_NAME_UP, Vector3.forward },
+			{ cfg.KEY_NAME_DOWN, Vector3.back },
+			{ cfg.KEY_NAME_RIGHT, Vector3.right },
+			{ cfg.KEY_NAME_LEFT, Vector3.left }
+		};
 	}
 
 	// Update is called once per frame
