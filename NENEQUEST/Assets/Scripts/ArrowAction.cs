@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -26,12 +26,11 @@ public class ArrowAction : MonoBehaviour
 
 	IEnumerator Move ()
 	{
-		while (true) {
-			if (isPassed ())
-				Destroy (gameObject);
+		while (!isPassed ()) {
 			transform.position += velocity * Time.deltaTime;
 			yield return null;
 		}
+		Destroy (gameObject);
 	}
 
 	bool isPassed ()
