@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,13 +16,13 @@ public class InvincibleEffect : MonoBehaviour
 		bodyRenderer.enabled = false;
 	}
 
-	public void startEffect ()
+	public void StartEffect ()
 	{
 		isInvincible = true;
 		StartCoroutine (Flash ());
 	}
 
-	public void stopEffect ()
+	public void StopEffect ()
 	{
 		isInvincible = false;
 	}
