@@ -40,7 +40,7 @@ public class Config : MonoBehaviour
 	[System.NonSerialized]
 	public int ENEMY_2_IDX = 2;
 	[System.NonSerialized]
-	// public int[,] ENEMY_NUM = { { 1, 1, 0 }, { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 1 } };
+	// public int[,] ENEMY_NUM = { { 1, 1, 0 }, { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 1 } }; // for debugging, TODO
 	public int[,] ENEMY_NUM = { { 4, 0, 0 }, { 10, 5, 0 }, { 7, 7, 0 }, { 5, 6, 0 }, { 0, 0, 1 } };
 	[System.NonSerialized]
 	public float[] ENEMY_SPEED = { 8, 2, 1 };
