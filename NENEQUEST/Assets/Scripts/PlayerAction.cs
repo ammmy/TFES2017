@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -58,17 +58,17 @@ public class PlayerAction : MonoBehaviour
 	void TerminateInvincibleInterval ()
 	{
 		StopCoroutine (InvincibleInterval ());
-		invincibleEffect.stopEffect ();
+		invincibleEffect.StopEffect ();
 		childCollider.enabled = true;
 	}
 
 	private IEnumerator InvincibleInterval ()
 	{
 		ChangeState (State.Damaged);
-		invincibleEffect.startEffect ();
+		invincibleEffect.StartEffect ();
 		childCollider.enabled = false;
 		yield return new WaitForSeconds (cfg.PLAYER_INVINCIBLE_TIME);
-		invincibleEffect.stopEffect ();
+		invincibleEffect.StopEffect ();
 		childCollider.enabled = true;
 		ChangeState (State.Walking);
 	}
